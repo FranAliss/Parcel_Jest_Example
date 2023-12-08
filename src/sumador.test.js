@@ -92,19 +92,19 @@ describe("Pruebas de las vidas del juego", () => {
   });
 });
 
-// describe("pruebas de tamano del codigo secreto", () => {
-//   let cowsAndBullsObj;
-//   beforeEach(() => {
-//     cowsAndBullsObj = new CowsAndBulls();
-//   });
-//   it("devuelve el tamano de la cadena por defecto", () => {
-//     expect(cowsAndBullsObj.getCodeLength()).toEqual(4);
-//   });
-//   it("permite cambio de tamanho del codigo", () => {
-//     cowsAndBullsObj.setCodeLength(5);
-//     expect(cowsAndBullsObj.getCodeLength()).toEqual(5);
-//   });
-// });
+describe("pruebas de tamano del codigo secreto", () => {
+  let cowsAndBullsObj;
+  beforeEach(() => {
+    cowsAndBullsObj = new CowsAndBulls();
+  });
+  it("devuelve el tamano de la cadena por defecto", () => {
+    expect(cowsAndBullsObj.getCodeLength()).toEqual(4);
+  });
+  it("permite cambio de tamanho del codigo", () => {
+    cowsAndBullsObj.setCodeLength(5);
+    expect(cowsAndBullsObj.getCodeLength()).toEqual(5);
+  });
+});
 
 // describe("pruebas para generar codigos aleatoriamente", () => {
 //   let cowsAndBullsObj;
