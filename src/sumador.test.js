@@ -1,30 +1,30 @@
 import CowsAndBulls from "./sumador.js";
 
-// describe("Pruebas de turnos", () => {
-//   let cowsAndBullsObj;
-//   beforeEach(() => {
-//     cowsAndBullsObj = new CowsAndBulls();
-//   });
-//   it("deberia cambiar el turno de 1 a 2", () => {
-//     cowsAndBullsObj.swapPlayersTurn();
-//     expect(cowsAndBullsObj.getCurrentTurn()).toEqual(2);
-//   });
-//   it("deberia cambiar el turno de 1 a 2 y luego de 2 a 1", () => {
-//     cowsAndBullsObj.swapPlayersTurn();
-//     cowsAndBullsObj.swapPlayersTurn();
-//     expect(cowsAndBullsObj.getCurrentTurn()).toEqual(1);
-//   });
-// });
-// describe("Pruebas del codigo secreto", () => {
-//   let cowsAndBullsObj;
-//   beforeEach(() => {
-//     cowsAndBullsObj = new CowsAndBulls();
-//   });
-//   it("Prueba para guardar el codigo secreto", () => {
-//     cowsAndBullsObj.saveSecretCode(1425);
-//     expect(cowsAndBullsObj.getSecretCode()).toEqual(1425);
-//   });
-// });
+describe("Pruebas de turnos", () => {
+  let cowsAndBullsObj;
+  beforeEach(() => {
+    cowsAndBullsObj = new CowsAndBulls();
+  });
+  it("deberia cambiar el turno de 1 a 2", () => {
+    cowsAndBullsObj.swapPlayersTurn();
+    expect(cowsAndBullsObj.getCurrentTurn()).toEqual(2);
+  });
+  it("deberia cambiar el turno de 1 a 2 y luego de 2 a 1", () => {
+    cowsAndBullsObj.swapPlayersTurn();
+    cowsAndBullsObj.swapPlayersTurn();
+    expect(cowsAndBullsObj.getCurrentTurn()).toEqual(1);
+  });
+});
+describe("Pruebas del codigo secreto", () => {
+  let cowsAndBullsObj;
+  beforeEach(() => {
+    cowsAndBullsObj = new CowsAndBulls();
+  });
+  it("Prueba para guardar el codigo secreto", () => {
+    cowsAndBullsObj.saveSecretCode(1425);
+    expect(cowsAndBullsObj.getSecretCode()).toEqual(1425);
+  });
+});
 
 // describe("Pruebas de respuesta tras adivinar", () => {
 //   let cowsAndBullsObj;
