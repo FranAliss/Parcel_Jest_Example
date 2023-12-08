@@ -67,14 +67,14 @@ describe("Pruebas de respuesta tras adivinar", () => {
   });
 });
 
-// describe("Pruebas de las vidas del juego", () => {
-//   let cowsAndBullsObj;
-//   beforeEach(() => {
-//     cowsAndBullsObj = new CowsAndBulls();
-//   });
-//   it("Obteniendo la cantidad de vidas por defecto", () => {
-//     expect(cowsAndBullsObj.getLifesRemaining()).toEqual(8);
-//   });
+describe("Pruebas de las vidas del juego", () => {
+  let cowsAndBullsObj;
+  beforeEach(() => {
+    cowsAndBullsObj = new CowsAndBulls();
+  });
+  it("Obteniendo la cantidad de vidas por defecto", () => {
+    expect(cowsAndBullsObj.getLifesRemaining()).toEqual(8);
+  });
 //   it("Reduciendo la cantidad de vidas con cada intento", () => {
 //     cowsAndBullsObj.guessSecretCode(1000);
 //     expect(cowsAndBullsObj.getLifesRemaining()).toEqual(7);
@@ -90,7 +90,7 @@ describe("Pruebas de respuesta tras adivinar", () => {
 //     cowsAndBullsObj.guessSecretCode(1002);
 //     expect(cowsAndBullsObj.getLifesRemaining()).toEqual(12);
 //   });
-// });
+});
 
 // describe("pruebas de tamano del codigo secreto", () => {
 //   let cowsAndBullsObj;
